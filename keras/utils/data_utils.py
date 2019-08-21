@@ -728,6 +728,6 @@ class GeneratorEnqueuer(SequenceEnqueuer):
                 raise RuntimeError(
                     "Your generator is NOT thread-safe."
                     "Keras requires a thread-safe generator when"
-                    "`use_multiprocessing=False, workers > 1`."
+                    "`use_multiprocessing=True, workers > 1`."
                     "For more information see issue #1638.")
             six.reraise(*sys.exc_info())
